@@ -1,0 +1,9 @@
+<div class="container mt-5">
+    <div class="row row-cols-sm-1 row-cols-md-3 row-cols-lg-4">
+        @for (character of characters; track character.id) {
+            <div class="col-md-3 mb-3">
+                <app-character-card [character]="character" />
+            </div>
+        }
+    </div>
+</div>
